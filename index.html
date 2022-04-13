@@ -1,249 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/apple-icon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
-    />
-    <title>Profile | Zaydan</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Blog | Zaydan</title>
   </head>
-  <body class="text-gray-800 antialiased">
-    <nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
-    >
-      <div
-        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-      >
-        <div
-          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-          id="example-collapse-navbar"
-        >
-          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#zay"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Share</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#zay"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#zay"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Star</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <button
-                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                type="button"
-                style="transition: all 0.15s ease 0s;"
-              >
-                <i class="fas fa-arrow-alt-circle-down"></i> Download
-              </button>
-            </li>
-          </ul>
-        </div>
+  <body id="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light">
+      <div class="container">
+        <a class="navbar-brand text-white " href="#body">
+            <img src="img/zaw1.png" alt="Website Logo" width="35" height="30" class="d-inline-block align-text-top" />
+            </svg>
+            zecrop
+        </a>
       </div>
     </nav>
-    <main class="profile-page">
-      <section class="relative block" style="height: 500px;">
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          
-        >
-        <img src="./assets/img/bg.jpg" alt=""
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-50 bg-black"
-          ></span>
-        </div>
-        <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px;"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-      </section>
-      <section class="relative py-16 bg-gray-300">
-        <div class="container mx-auto px-4">
-          <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
-          >
-            <div class="px-6">
-              <div class="flex flex-wrap justify-center">
-                <div
-                  class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center"
-                >
-                  <div class="relative">
-                    <img
-                      alt="..."
-                      src="./assets/img/profil.jpg"
-                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
-                      style="max-width: 150px;"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
-                >
-                  <div class="py-6 px-3 mt-32 sm:mt-0">
-                    <button
-                      class="bg-blue-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
-                      type="button"
-                      style="transition: all 0.15s ease 0s;"
-                    >
-                      Connect
-                    </button>
-                  </div>
-                </div>
-                <div class="w-full lg:w-4/12 px-4 lg:order-1">
-                  <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                    <div class="mr-4 p-3 text-center">
-                      <span
-                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                        >22</span
-                      ><span class="text-sm text-gray-500">Friends</span>
-                    </div>
-                    <div class="mr-4 p-3 text-center">
-                      <span
-                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                        >10</span
-                      ><span class="text-sm text-gray-500">Photos</span>
-                    </div>
-                    <div class="lg:mr-4 p-3 text-center">
-                      <span
-                        class="text-xl font-bold block uppercase tracking-wide text-gray-700"
-                        >89</span
-                      ><span class="text-sm text-gray-500">Comments</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center mt-12">
-                <h3
-                  class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2"
-                >
-                  Zaydan Aymar
-                </h3>
-                <div
-                  class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"
-                >
-                  <i
-                    class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"
-                  ></i>
-                  Bantul, Yogyakarta
-                </div>
-                <div class="mb-2 text-gray-700 mt-10">
-                  <i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i
-                  >Freelance - Serabutan
-                </div>
-                <div class="mb-2 text-gray-700">
-                  <i class="fas fa-university mr-2 text-lg text-gray-500"></i
-                  >Universitas Ahmad Dahlan
-                </div>
-              </div>
-              <div class="mt-10 py-10 border-t border-gray-300 text-center">
-                <div class="flex flex-wrap justify-center">
-                  <div class="w-full lg:w-9/12 px-4">
-                    <p class="mb-4 text-lg leading-relaxed text-gray-800">
-                      Seorang mahasiswa biasa biasa saja, Besar di lingkungan seniman ISI Yogyakarta,
-                      Bekerja sambilan sesuai yang ingin dikerjakan, Biasa mengambil foto produk, foto model,
-                      vidio cinematik, vidio iklan, dokumenter dan beragam perdesainan.
-                    </p>
-                    <a href="#zay" class="font-normal text-blue-500"
-                      >Show more</a
-                    >
-                  </div>
-                </div>
-              </div>
+    <!-- Akhir Navbar -->
+    <!-- Jumbotron -->
+    <section class="jumbotron text-start">
+      <!--Header-->
+      <div class="cover">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-md-6 text-white">
+              <h1>Zaydan Aymar</h1>
+              <p>Seorang mahasiswa universitas ahmad dahlan, besar di lingkungan seniman ISI Yogyakarta. Bekerja sambilan, biasa mengerjakan foto produk, foto model, vidio cinematic, vidio iklan, dokumenter dan beragam perdesainan.</p>
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="relative bg-gray-300 pt-8 pb-6">
-      <div
-        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style="height: 80px;"
-      >
-        <svg
-          class="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            class="text-gray-300 fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
-      <div class="container mx-auto px-4">
 
-        <hr class="my-6 border-gray-400" />
-        <div
-          class="flex flex-wrap items-center md:justify-between justify-center"
-        >
-          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div class="text-sm text-gray-600 font-semibold py-1">
-              Copyright © 2022 Zaydan by Tailwind
+            <div class="col-md-4 align-self-end text-center">
+                <img src="img/zay.png" class="card-img-top" width="300px" alt="" />
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
-  <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
-    }
-  </script>
+      <br> <br>
+      <!--end header-->
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,
+            101.3C672,96,768,128,864,133.3C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,
+            96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,
+            320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Blog -->
+    <section id="blog">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="title text-center wow fadeInDown mb-5">
+                    <h2> Blog <span class="color">Kami</span></h2>
+                    <div class="border"></div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img src="img/Projects/blog-1.png" class="card-img-top" alt="Project 1" />
+                  <div class="card-body text-white">
+                    <h3>Pre-Wedding yang Digemari</h3>
+                    <p class="card-text">Ada beberapa konsep foto pre-wedding yang paling digemari para calon mempelai. Kami menyediakan konsultasi gratis untuk pemilihan konsep.</p>
+                    <button type="button" href="#" class="btn btn-outline-light">Baca Selengkapnya</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img src="img/Projects/blog-2.png" class="card-img-top" alt="Project 2" />
+                  <div class="card-body text-white">
+                    <h3>Tips Foto Wisuda</h3>
+                    <p class="card-text">Salah satu momen bahagia di masa dewasa yaitu masa wisuda. Rasa bangga setelah menempuh jenjang pendidikan yang lebih tinggi.</p>
+                    <button type="button" href="#" class="btn btn-outline-light">Baca Selengkapnya</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img src="img/Projects/blog-3.jpg" class="card-img-top" alt="Project 3" />
+                  <div class="card-body text-white ">
+                    <h3>Video Cinematic</h3>
+                    <p class="card-text">Video Cinematic adalah sebuah video yang bercerita. Untuk itu, salah satu faktor yang harus kalian perhatikan adalah subjek. Pastikan subjek berada di tengah frame.</p>
+                    <button type="button" href="#" class="btn btn-outline-light">Baca Selengkapnya</button>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#4d4545"
+          fill-opacity="1"
+          d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,
+        106.7C672,85,768,75,864,80C960,85,1056,107,1152,128C1248,149,1344,171,1392,181.3L1440,
+        192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,
+        320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir blog -->
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="title text-center wow fadeInDown mb-5">
+                    <h2 class="text-white"> Contact <span class="color">Kami</span></h2>
+                    <div class="border"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-white">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email </label>
+                                <input type="email" class="form-control" id="email" aria-describedby="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,288L34.3,282.7C68.6,277,137,267,206,245.3C274.3,224,343,192,411,
+        192C480,192,549,224,617,229.3C685.7,235,754,213,823,197.3C891.4,181,960,171,1029,
+        154.7C1097.1,139,1166,117,1234,128C1302.9,139,1371,181,1406,202.7L1440,224L1440,
+        320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,
+        320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,
+        320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Contact -->
+
+<!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script> 
+<!-- vue js -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./main.js"></script>
+        
+</body>
 </html>
