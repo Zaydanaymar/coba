@@ -10,6 +10,8 @@ Vue.createApp({
         axios
         .get(
             "https://raw.githubusercontent.com/Zaydanaymar/store/main/contents/header.json",
+            "https://raw.githubusercontent.com/Zaydanaymar/store/main/contents/artikel.json",
+
         )
         .then((res) => {
             console.log(res.data);
